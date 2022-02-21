@@ -33,9 +33,8 @@ offset = int(len(kernel) / 2)
 # onwards to the end of the image minus offset
 # and for each pixel get the sum of the neighboring pixels
 # rbg values and multiply by the associated filter
-
-for x in range(offset, img.width - offset):
-    for y in range(offset, img.height - offset):
+for x in range(offset, width - offset):
+    for y in range(offset, height - offset):
         values = [0,0,0]
         for kernelX in range(len(kernel)):
             for kernelY in range(len(kernel)):
