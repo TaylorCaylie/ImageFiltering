@@ -40,5 +40,4 @@ for x in range(offset, img.width - offset):
                 valuesY[2] += newPxl[2] * kernely[kernelX][kernelY]
         pix[x, y] = (int(math.sqrt(valuesX[0]**2 + valuesY[0]**2)), int(math.sqrt(valuesX[1]**2 + valuesY[1]**2)), int(math.sqrt(valuesX[1]**2 + valuesY[1]**2)))
 img.show()
-# output_image.save("output.png")
-# output_image.show()
+img.save("outputImages/cannyedge.jpg")

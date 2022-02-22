@@ -43,4 +43,4 @@ for y in range(offset, height - offset):
     pix[x, y] = (int(values[0]), int(values[1]), int(values[2]))
 
 img.show()
-img.save("GaussianBlurOutput", format="png")
+img.save("outputImages/gaussian.jpg")

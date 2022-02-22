@@ -44,3 +44,4 @@ for x in range(offset, width - offset):
                 values[2] += newPxl[2] * kernel[kernelX][kernelY]
         pix[x, y] = (int(values[0]), int(values[1]), int(values[2]))
 img.show()
+img.save("outputImages/motionblur.jpg")

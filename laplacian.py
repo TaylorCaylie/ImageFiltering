@@ -30,5 +30,4 @@ for x in range(offset, img.width - offset):
                 values[2] += newPxl[2] * kernel[kernelX][kernelY]
         pix[x, y] = (int(values[0]), int(values[1]), int(values[2]))
 img.show()
-# output_image.save("output.png")
-# output_image.show()
+img.save("outputImages/laplacian.jpg")
